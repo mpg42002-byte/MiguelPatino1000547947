@@ -22,6 +22,10 @@ def dividir(a, b):
         raise ValueError("No se puede dividir entre cero.")
     return a / b
 
+def potencia(base, exponente):
+    """Calcula la potencia de un número."""
+    return base ** exponente
+
 # Programa principal
 if __name__ == "__main__":
     print("=== Calculadora Simple ===")
@@ -29,4 +33,5 @@ if __name__ == "__main__":
     print(f"10 - 4 = {restar(10, 4)}")
     print(f"6 x 7 = {multiplicar(6, 7)}")
     print(f"15 / 3 = {dividir(15, 3)}")
+    print(f"2 ^ 8 = {potencia(2, 8)}")
     print("Calculadora funcionando correctamente!")

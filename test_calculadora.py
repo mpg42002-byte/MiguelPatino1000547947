@@ -5,7 +5,7 @@
 # Estas pruebas son las que GitHub Actions ejecutará automáticamente
 
 import unittest
-from calculadora import sumar, restar, multiplicar, dividir
+from calculadora import sumar, restar, multiplicar, dividir, potencia
 
 class TestCalculadora(unittest.TestCase):
 
@@ -39,6 +39,12 @@ class TestCalculadora(unittest.TestCase):
         with self.assertRaises(ValueError):
             dividir(5, 0)
         print("Prueba de division por cero: PASADA")
+
+    def test_potencia(self):
+        """Prueba que la potencia funciona correctamente."""
+        self.assertEqual(potencia(2, 3), 8)
+        self.assertEqual(potencia(5, 0), 1)
+        print("Prueba de potencia: PASADA")
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)
