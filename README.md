@@ -19,14 +19,10 @@ mediante GitHub Actions para la asignatura Aplicaciones y Servicios Web.
 | `dividir(a, b)` | Divide dos números | `dividir(10, 2)` → 5 |
 
 ## Cómo ejecutar
-```bash
 python calculadora.py
-```
 
 ## Cómo ejecutar las pruebas
-```bash
 python -m pytest test_calculadora.py -v
-```
 
 ## Flujo CI/CD
 Cada commit activa automáticamente GitHub Actions, que:
