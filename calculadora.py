@@ -26,6 +26,12 @@ def potencia(base, exponente):
     """Calcula la potencia de un número."""
     return base ** exponente
 
+def modulo(a, b):
+    """Calcula el módulo (residuo) de la división."""
+    if b == 0:
+        raise ValueError("El divisor no puede ser cero.")
+    return a % b
+
 # Programa principal
 if __name__ == "__main__":
     print("=== Calculadora Simple ===")
@@ -34,4 +40,5 @@ if __name__ == "__main__":
     print(f"6 x 7 = {multiplicar(6, 7)}")
     print(f"15 / 3 = {dividir(15, 3)}")
     print(f"2 ^ 8 = {potencia(2, 8)}")
+    print(f"10 % 3 = {modulo(10, 3)}")
     print("Calculadora funcionando correctamente!")
