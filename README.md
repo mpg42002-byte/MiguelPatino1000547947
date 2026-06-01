@@ -17,16 +17,11 @@ mediante GitHub Actions para la asignatura Aplicaciones y Servicios Web.
 | `restar(a, b)` | Resta dos números | `restar(10, 3)` → 7 |
 | `multiplicar(a, b)` | Multiplica dos números | `multiplicar(2, 5)` → 10 |
 | `dividir(a, b)` | Divide dos números | `dividir(10, 2)` → 5 |
+| `potencia(base, exp)` | Calcula potencia | `potencia(2, 3)` → 8 |
+| `modulo(a, b)` | Calcula residuo | `modulo(10, 3)` → 1 |
 
 ## Cómo ejecutar
 python calculadora.py
 
 ## Cómo ejecutar las pruebas
-python -m pytest test_calculadora.py -v
-
-## Flujo CI/CD
-Cada commit activa automáticamente GitHub Actions, que:
-1. Configura Python 3.13
-2. Instala dependencias
-3. Ejecuta el programa principal
-4. Ejecuta todas las pruebas automáticas
+python -m pytest
